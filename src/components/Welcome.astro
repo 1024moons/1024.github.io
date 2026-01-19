@@ -4,6 +4,10 @@ import mailLogo from '../assets/mail.png';
 ---
 
 <div id="container">
+	<div id="background">
+		<div id="sun"></div>
+		<div class="orbit"></div><div class="mercury"></div>
+	</div>
 	<main>
 		<section id="hero">
 			<h1>
@@ -23,12 +27,46 @@ import mailLogo from '../assets/mail.png';
 </div>
 
 <style>
+	#container {
+		display: flex;
+		flex-direction: row;
+		justify-content:space-between;
+	}
 	#hero {
 		width:60%;
+		max-width: 900px;
 		margin-left: auto;
 	}
 
 	#socials img {
 		width: 40px;
+	}
+	#sun {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		bottom: -50px;
+		left: -50px;
+		border-radius: 50%;
+		border: solid 10px;
+	}
+	.orbit {
+		width: 250px;
+		height: 250px;
+		position: absolute;
+		bottom: -125px;
+		left: -125px;
+		border-radius: 50%;
+		border: dotted 2px;
+	}
+
+	.mercury {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		border: solid 5px;
+		position:absolute;
+		left:118px;
+		bottom:-10px
 	}
 </style>
