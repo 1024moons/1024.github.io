@@ -6,7 +6,7 @@ import mailLogo from '../assets/mail.png';
 <div id="container">
 	<div id="background">
 		<div id="sun"></div>
-		<div class="orbit"></div><div class="mercury"></div>
+		<div class="orbit"></div>
 	</div>
 	<main>
 		<section id="hero">
@@ -41,12 +41,15 @@ import mailLogo from '../assets/mail.png';
 	#socials img {
 		width: 40px;
 	}
+	#background {
+		overflow:hidden;
+	}
 	#sun {
 		width: 100px;
 		height: 100px;
 		position: absolute;
-		bottom: -50px;
-		left: -50px;
+		bottom: 0px;
+		left: 0px;
 		border-radius: 50%;
 		border: solid 10px;
 	}
@@ -55,7 +58,7 @@ import mailLogo from '../assets/mail.png';
 		height: 250px;
 		position: absolute;
 		bottom: -125px;
-		left: -125px;
+		left: 0px;
 		border-radius: 50%;
 		border: dotted 2px;
 	}
